@@ -1,0 +1,239 @@
+html{
+    box-sizing: border-box;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+}
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 1200;
+}
+
+button:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.8;
+  }
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    background-color: #270082;
+    color: white;
+    padding: 0 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    top: 0;
+    position: sticky;
+    z-index: 100;
+
+}
+
+.leftheader {
+    flex-basis: 40%;
+}
+.rightheader ul {
+    list-style: none;
+    display: flex;
+    padding: 15px 0;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+
+}
+a:hover {
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+.head {
+    display: grid;
+    color: white;
+    background-image: url(../images/hero_image.png);
+    background-position: center;
+    place-items: center;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+.head_content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: auto 80px;
+}
+.head h1{
+    font-size: 95px;
+}
+.head h2 {
+    font-size: 2rem;
+    margin-top: -3rem;
+}
+.musicsec {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #281154;
+    color: white;
+}
+.musicsec-content {
+    
+    margin: auto 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn1 {
+    padding: 10px 15px;
+    background-color: #dc0000;
+    color: white;
+    border: none;
+}
+.ipad-img {
+    margin-top: -400px;
+    position: relative;
+    top: 400px;
+}
+.abmusic {
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    gap: 30px;
+    margin: auto 80px;
+}
+.btn2 {
+    padding: 10px 15px;
+    background-color: #270082;
+    color: white;
+    border: none;
+}
+.videosec {
+    background-image: url(../images/video.png);
+    display: grid;
+    min-height: 350px;
+    text-align: center;
+    place-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+.video-content {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    text-align: center;
+    color: white;
+    margin: auto 80px;
+}
+.gift-section {
+    scroll-margin: 120px;
+  }
+  .giftsec {
+    display: flex;
+    flex-flow: row nowrap ;
+    gap: 30px;
+    margin: 50px 80px;
+  }
+.gift-content {
+    display: flex;
+    flex-flow: column;
+}
+.gift-button {
+    border-top: 1px solid gainsboro;
+    padding-top: 20px;
+}
+.btn3 {
+    padding: 10px 15px;
+    color: white;
+    background-color: #1b0058;
+    border: none;
+}
+.topfooter {
+    background-color: #281154;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+.headlink {
+    border-bottom: 1px solid white;
+    padding: 10px 15px;
+}
+footer ul {
+    list-style: none;
+}
+footer a:hover {
+    transition: 0.2s ease-in-out;
+    opacity: 0.5;
+}
+.location {
+    padding-top: 10px;
+}
+.downfooter {
+    background-color: #270082;
+    margin-top: -30px;
+    color: white;
+    min-height: 40px;
+    display: flex;
+    justify-content: center;   
+}
+iframe {
+    border-radius: 15px;
+}
+
+@media (max-width:780px) {
+header {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    margin-bottom: -20px;
+}
+.head h1 {
+    font-size: 60px;
+}
+.head h2 {
+    font-size: 1rem;
+}
+.ipad-img {
+    display: flex;
+    justify-content: center;
+    margin-top: -150px;
+    position: relative;
+    top: 150px;
+}
+.ipad-img img {
+    width: 100%;
+}
+.abmusic, .giftsec, .topfooter, .musicsec-content, .giftimg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.giftimg img {
+    width: 100%;
+}
+.abmusic {
+    padding-top: 200px;
+}
+.musicsec  {
+    padding-top: 0;
+}
+.abmusic img {
+    width: 100%;
+}
+
+}
